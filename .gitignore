@@ -1,0 +1,24 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.dll
+*.lib
+*.exe
+*.pdb
+*.aps
+*.db
+*.env
+*.key
+*.reg
+*.sql.gz
+*.swf
+*.lic
+
+# Keep the archived SDK libraries and runtimes tracked.
+!/vendor/grfinger-sdk/GrFinger.dll
+!/vendor/grfinger-sdk/GrFinger.lib
+!/vendor/grfinger-sdk/pthreadVC2.dll
+!/vendor/mysql-sdk/libmysql.dll
+!/vendor/mysql-sdk/libmysql.lib

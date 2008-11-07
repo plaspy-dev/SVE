@@ -1,0 +1,6 @@
+; JFinger.def : Declares the module parameters for the DLL.
+
+LIBRARY      "JFinger"
+
+EXPORTS
+    ; Explicit exports can go here

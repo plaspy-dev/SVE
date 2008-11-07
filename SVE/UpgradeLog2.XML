@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SVE">
+</Property><Property Name="Solution File" Value="E:\documentos\Escritorio\SVE\src\SVE\SVE.sln">
+</Property><Property Name="User Options File" Value="E:\documentos\Escritorio\SVE\src\SVE\SVE.suo">
+</Property><Property Name="Date" Value="viernes, 07 de noviembre de 2008">
+</Property><Property Name="Time" Value="10:31 a.m.">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="2" Project="" Source="SVE.sln" Description="Error creating backup file: E:\documentos\Escritorio\SVE\src\SVE\SVE.sln.old">
+</Event><Event ErrorLevel="2" Project="" Source="SVE.suo" Description="Error creating backup file: E:\documentos\Escritorio\SVE\src\SVE\SVE.suo.old">
+</Event><Event ErrorLevel="0" Project="SVE" Source="SVE.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="SVE" Source="SVE.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="SVE" Source="SVE.vcproj" Description="Project file successfully backed up as 'E:\documentos\Escritorio\SVE\src\SVE\SVE.vcproj.8.00.old'.">
+</Event><Event ErrorLevel="0" Project="SVE" Source="SVE.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="SVE" Source="SVE.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SVE.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SVE.sln" Description="Converted">
+</Event></UpgradeLog>
