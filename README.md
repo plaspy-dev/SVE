@@ -8,7 +8,7 @@ Aplicación de escritorio que combina tareas de captura y administración con pa
 
 ### Esta revisión
 
-**2026-11-17 · Relacionar captura, entrega e informes.** Recupera las vistas de captura y entrega y el área de informes. Los módulos de escritorio permiten seguir el registro desde su captura hasta la consulta del resultado.
+**2026-11-17 · Preparar una prueba de verificación con datos inventados.** Describe las dependencias del proyecto de Windows y propone usar imágenes y valores de muestra para cualquier prueba con un dispositivo. El lector puede estudiar el flujo sin usar registros de personas reales.
 
 ### Cómo explorar el código
 
@@ -25,7 +25,7 @@ A desktop application combining capture and administration tasks with delivery a
 
 ### This revision
 
-**2026-11-17 · Connect capture, delivery, and reporting.** Recover the capture and delivery views and the reporting area. The desktop modules let readers trace a record from capture to review of the result.
+**2026-11-17 · Prepare a verification test with fictional data.** Describe the Windows project dependencies and suggest sample images and values for device tests. Readers can explore the workflow without using records from real people.
 
 ### How to explore the source
 
