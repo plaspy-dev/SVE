@@ -52,9 +52,13 @@ docker compose -f demo/compose.yaml down --volumes
 
 `SVE/SVE.cpp` starts the desktop and `SVE/InformesView.cpp` provides reports. `Administrador/` contains access administration and `appt/` holds app configuration. `vendor/` contains the libraries matched to the archived symbols. `compat/` supplies a Windows theme include and `demo/` contains MySQL definitions and fictional rows. `README.md` explains the setup and `.gitignore` ignores generated output and local support files. `external-sources.tsv` records original source hashes. `demo/strongbox-source-map.tsv` records comparisons against the related desktop project.
 
+### Verification
+
+With the Windows 11, MSBuild, MSVC and MFC versions in Requirements, `msbuild SVE.sln /t:Build /nologo /m:3 /nr:false /p:Configuration=Release /p:Platform=Win32 /p:PreferredToolArchitecture=x64 "/p:MySqlSdkDir=$mysql" "/p:GrFingerSdkDir=$grfinger"` exited 0. The recorded test launched a disposable MySQL container and started SVE.exe directly with the fictional fixture. Usage explains the separate Compose and PowerShell walkthrough. In the November 23, 2026 verification, the Win32 desktop signed in to an isolated MySQL 5.7.44 Docker service and retrieved one fictional delivery in **Informes**. The query is confirmed by the container log. Result: partial because no compatible fingerprint reader, camera or WIA scanner was available. Physical capture, fingerprint matching and scanning remain untested. The SDK runtime was loaded without requesting SVE’s own serial.
+
 ### History
 
-November 7, 2008. Archived Win32 solution and sources. The current build changes are recorded below. The source date was recovered from the November 2008 project files and release symbols and recorded at noon UTC without the original timezone. The 2026 reconstruction adds the converted projects, Win32 dependency paths, disposable schema and new readme. SVE’s serial and trial checks are off unless the build defines `ENABLE_LICENSE_CHECK`.
+November 17, 2026. Added the build and fictional report verification for the 2008 desktop. The source date was recovered from the November 2008 project files and release symbols and recorded at noon UTC without the original timezone. The 2026 reconstruction adds the converted projects, Win32 dependency paths, disposable schema and new readme. SVE’s serial and trial checks are off unless the build defines `ENABLE_LICENSE_CHECK`.
 
 ### Support
 
@@ -121,9 +125,13 @@ docker compose -f demo/compose.yaml down --volumes
 
 `SVE/SVE.cpp` inicia la aplicación y `SVE/InformesView.cpp` genera los informes. `Administrador/` contiene la administración de acceso y `appt/` la configuración. `vendor/` contiene las librerías cotejadas con los símbolos archivados. `compat/` adapta el encabezado de temas y `demo/` trae las tablas y filas ficticias. `README.md` explica el uso y `.gitignore` excluye salidas generadas y archivos auxiliares locales. `external-sources.tsv` registra los hashes originales. `demo/strongbox-source-map.tsv` registra el cotejo con el proyecto de escritorio relacionado.
 
+### Verificación
+
+Con las versiones de Windows 11, MSBuild, MSVC y MFC de Requisitos, `msbuild SVE.sln /t:Build /nologo /m:3 /nr:false /p:Configuration=Release /p:Platform=Win32 /p:PreferredToolArchitecture=x64 "/p:MySqlSdkDir=$mysql" "/p:GrFingerSdkDir=$grfinger"` terminó con código 0. La prueba registrada inició un contenedor MySQL desechable y abrió SVE.exe directamente con los datos ficticios. Uso explica el recorrido separado con Compose y PowerShell. En la verificación del 23 de noviembre de 2026, el escritorio Win32 inició sesión en MySQL 5.7.44 aislado en Docker y recuperó una entrega ficticia en **Informes**. El log del contenedor confirma la consulta. Resultado parcial por falta de lector de huellas, cámara y escáner WIA compatibles. Quedaron pendientes la captura física, la comparación de huellas y el escaneo. El SDK cargó sin pedir el serial propio de SVE.
+
 ### Historial
 
-7 de noviembre de 2008. Solución Win32 y fuentes recuperadas del respaldo. Los cambios de compilación se explican abajo. Se recuperó la fecha de los proyectos y símbolos de noviembre de 2008 y se registró al mediodía UTC porque el respaldo no indica zona horaria original. La reconstrucción de 2026 agrega proyectos convertidos, rutas Win32, esquema desechable y README. El serial y el periodo de prueba de SVE quedan desactivados salvo que se defina `ENABLE_LICENSE_CHECK`.
+17 de noviembre de 2026. Agrega la verificación de compilación y del informe ficticio de la edición de 2008. Se recuperó la fecha de los proyectos y símbolos de noviembre de 2008 y se registró al mediodía UTC porque el respaldo no indica zona horaria original. La reconstrucción de 2026 agrega proyectos convertidos, rutas Win32, esquema desechable y README. El serial y el periodo de prueba de SVE quedan desactivados salvo que se defina `ENABLE_LICENSE_CHECK`.
 
 ### Soporte
 
