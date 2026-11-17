@@ -1,0 +1,760 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FENTREGA DIALOGEX 0, 0, 343, 273
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EGUIA,171,14,105,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EOFICINA,118,46,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ECIUDAD,167,46,45,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DFECHA,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,217,46,59,15
+    COMBOBOX        IDC_CTIPOD,118,85,68,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ENODOCUMENTO,217,84,105,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ENOMBRE,217,100,105,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EAPELLIDO,217,116,105,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIRECCION,217,132,105,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ETELEFONO,217,148,105,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ECANTIDAD,159,182,39,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EPESO,242,182,39,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDESCRIPCION,159,201,162,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EOBSERVACIONES,74,233,247,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Aceptar",IDOK,213,250,50,16
+    PUSHBUTTON      "&Cancelar",IDC_BCANCELAR,271,250,50,16
+    LTEXT           "",IDC_SLOGO,12,7,88,32
+    CTEXT           "",IDC_SHUELLA,19,123,72,77,SS_CENTERIMAGE
+    LTEXT           "Guia",IDC_STATIC,110,16,15,8
+    LTEXT           "Cantidad",IDC_STATIC,118,186,30,8
+    LTEXT           "Peso",IDC_STATIC,212,185,16,8
+    LTEXT           "Gramos",IDC_STATIC,295,185,25,8
+    LTEXT           "Nombre",IDC_STATIC,118,100,26,8
+    LTEXT           "Apellido",IDC_STATIC,118,116,26,8
+    GROUPBOX        "Tipo de documento",IDC_STATIC,111,74,225,95
+    LTEXT           "No.",IDC_STATIC,194,86,12,8
+    LTEXT           "Dirección",IDC_STATIC,118,132,30,8
+    LTEXT           "Teléfono",IDC_STATIC,118,148,29,8
+    GROUPBOX        "Paquete",IDC_STATIC,111,173,225,50
+    GROUPBOX        "Oficina",IDC_STATIC,111,30,180,40
+    LTEXT           "Ciudad",IDC_STATIC,168,35,23,8
+    LTEXT           "Fecha",IDC_STATIC,219,35,20,8
+    LTEXT           "Descripción",IDC_STATIC,118,203,37,8
+    LTEXT           "Observaciones",IDC_STATIC,15,236,48,8
+    LTEXT           "Camara",IDC_STEMP,291,7,45,16,NOT WS_VISIBLE
+    PUSHBUTTON      "&Tomar Foto",IDC_BCAPTURAR,12,219,50,14
+    COMBOBOX        IDC_CAMARAS,12,204,87,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "",IDC_SFOTO3,12,41,88,77,SS_NOTIFY | SS_CENTERIMAGE | WS_BORDER
+END
+
+IDD_PPCOMPORTAMIENTO DIALOGEX 0, 0, 210, 154
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Comportamiento"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Bloquear SVE por inactividad",IDC_CBLOQUEAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,28,107,10
+    LTEXT           "Despues de ",IDC_STATIC,24,43,40,8
+    EDITTEXT        IDC_ETIEMPO,64,40,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Minutos.",IDC_STATIC,109,43,28,8
+    CONTROL         "Usar efecto BN.",IDC_CEFECTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,137,43,61,10
+    CONTROL         "Mostrar sugerencias en los cuadros de edición.",IDC_CTOOLTIP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,56,165,10
+    CONTROL         "Reestablecer los cuadros de mensaje.",IDC_CMENSAJE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,68,137,10
+    CONTROL         "Mostrar texto en la barra de progreso.",IDC_CTEXTO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,80,140,10
+    CONTROL         "Saltar entre componentes con Enter",IDC_CENTER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,92,131,10
+    CONTROL         "Saltar entre componentes con las flechas",IDC_CFLECHAS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,104,147,10
+END
+
+IDD_PCAMARAS DIALOGEX 0, 0, 210, 154
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Camaras"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Reniciar camaras al restablecer formulario.",IDC_CREINICIAR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,24,152,10
+    LTEXT           "(No recomendado.)",IDC_STATIC,19,35,63,8
+    LTEXT           "Velocidad de actualización de camaras",IDC_STATIC,7,57,122,8
+    EDITTEXT        IDC_ETIEMPO,20,69,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Mili-Segundos.",IDC_STATIC,64,73,47,8
+END
+
+IDD_PPIMPRESION DIALOGEX 0, 0, 210, 154
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Impresión"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Espaciado (Milimetros)",IDC_STATIC,7,7,196,39
+    LTEXT           "Columnas",IDC_STATIC,15,23,32,8
+    EDITTEXT        IDC_ECOLUMNAS,48,21,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Filas",IDC_STATIC,113,23,15,8
+    EDITTEXT        IDC_EFILAS,134,21,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Fuentes",IDC_STATIC,7,47,196,99
+    LTEXT           "Encabezado",IDC_SENCABEZADO,9,62,178,17,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "...",IDC_BENCABEZADO,188,62,13,17
+    LTEXT           "Pie de página",IDC_SPIE,9,81,178,17,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "...",IDC_BPIE,188,81,13,17
+    LTEXT           "Títulos de columna",IDC_STITULOS,9,100,178,17,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "...",IDC_BTITULOS,188,100,13,17
+    LTEXT           "Texto",IDC_STEXTO,9,119,178,17,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "...",IDC_BTEXTO,188,119,13,17
+END
+
+IDD_PROGRESS DIALOGEX 0, 0, 184, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Obteniendo Imagen"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Cancelar",IDCANCEL,127,43,50,14
+    LTEXT           "Preparando dispositivo",IDC_MESSAGE,7,7,170,8
+    CONTROL         "1",IDC_PROGRESS_BAR,"msctls_progress32",WS_BORDER,7,22,170,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FENTREGA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_PPCOMPORTAMIENTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_PCAMARAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_PPIMPRESION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Acerca de SVE"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SVE Versión 1.2",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "(C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "Aceptar",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_SVE_FORM DIALOGEX 0, 0, 513, 295
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_ECODIGO,202,14,105,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ECEDULA,202,29,105,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ENOMBRE,144,44,163,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EAPELLIDO,144,59,163,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "A&gregar",IDC_BAGREGAR,310,14,31,14
+    DEFPUSHBUTTON   "&Aceptar",IDOK,201,272,50,16
+    PUSHBUTTON      "Cancelar",IDC_BUTTON3,261,272,50,16
+    PUSHBUTTON      "&Capturar",IDC_BCAPTURAR,12,245,50,14
+    COMBOBOX        IDC_CAMARAS,12,229,160,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "C&apturar",IDC_BCAPTURAR2,178,245,50,14
+    COMBOBOX        IDC_CAMARAS2,178,229,160,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ca&pturar",IDC_BCAPTURAR3,341,245,50,14
+    COMBOBOX        IDC_CAMARAS3,341,229,160,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EFECHA,202,74,105,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Documento de Identidad",IDC_STATIC,110,32,80,8
+    LTEXT           "Nombre",IDC_STATIC,110,47,26,8
+    LTEXT           "Apellido",IDC_STATIC,110,61,26,8
+    GROUPBOX        "Datos",IDC_STATIC,8,8,415,84
+    GROUPBOX        "Fotos",IDC_STATIC,8,93,497,171
+    LTEXT           "Guia",IDC_STATIC,110,16,15,8
+    LTEXT           "Fecha",IDC_STATIC,110,77,20,8
+    CTEXT           "",IDC_SFOTO3,12,104,160,120,SS_NOTIFY | SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "",IDC_SFOTO4,178,104,160,120,SS_NOTIFY | SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "",IDC_SHUELLA,427,15,72,77,SS_CENTERIMAGE
+    CTEXT           "",IDC_SFOTO6,341,104,160,120,SS_NOTIFY | SS_CENTERIMAGE | WS_BORDER
+    CONTROL         "",IDC_LMULTIPLE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,346,14,70,77
+    LTEXT           "",IDC_SLOGO,14,33,88,32
+    LTEXT           "Camara",IDC_STEMP,449,272,45,16,NOT WS_VISIBLE
+    LTEXT           "",IDC_SMENSAJE,7,276,191,8
+END
+
+IDD_FINFORMES DIALOGEX 0, 0, 270, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_DDESDE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,13,21,58,15
+    CONTROL         "",IDC_DHASTA,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,75,21,58,15
+    EDITTEXT        IDC_EDOCUMENTO,137,21,66,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "&Aceptar",IDOK,210,21,50,14
+    CONTROL         "",IDC_LRESULTADOS,"SysListView32",LVS_REPORT | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,7,46,256,109
+    LTEXT           "Desde",IDC_SDESDE,15,12,21,8
+    LTEXT           "Hasta",IDC_SHASTA,78,12,20,8
+    GROUPBOX        "Parametros",IDC_STATIC,9,5,256,35
+    LTEXT           "Documento",IDC_STATIC,141,12,37,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SVE_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 506
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_FINFORMES, DIALOG
+    BEGIN
+        RIGHTMARGIN, 265
+        BOTTOMMARGIN, 155
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SVE.ico"
+IDR_SVETYPE             ICON                    "res\\SVEDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&Archivo"
+    BEGIN
+        MENUITEM "&Nuevo\tCtrl+N",              ID_FILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Imprimir\tCtrl+P",           57607
+        MENUITEM "&Vista Preliminar",           57609
+        MENUITEM "C&onfigurar Página",          57606
+        MENUITEM SEPARATOR
+        MENUITEM "&Cerrar",                     ID_FILE_CLOSE
+        MENUITEM "&Salir",                      ID_APP_EXIT
+    END
+    POPUP "&Ver"
+    BEGIN
+        MENUITEM "&Barra de herramientas",      ID_VIEW_TOOLBAR
+        MENUITEM "&Barra de estado",            ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Navegador\tF2",              136
+        MENUITEM "&Propiedades\tF3",            ID_VER_PROPIEDADES
+    END
+    POPUP "&Herramientas"
+    BEGIN
+        MENUITEM "&Servidores",                 ID_CONFIGURACION_SERVIDORES
+        MENUITEM "&Personalizar",               ID_HERRAMIENTAS_PERSONALIZAR
+    END
+    POPUP "Ay&uda"
+    BEGIN
+        MENUITEM "A&yuda\tF1",                  ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&Indice\tCtrl+F1",            ID_HELP_INDEX
+        MENUITEM "&Buscar\tAlt+F1",             ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&Acerca de SVE...",           ID_APP_ABOUT
+    END
+END
+
+IDR_SVETYPE MENU 
+BEGIN
+    POPUP "&Archivo"
+    BEGIN
+        MENUITEM "&Nuevo\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "&Cerrar",                     ID_FILE_CLOSE
+        MENUITEM "&Guardar\tCtrl+G",            ID_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Imprimir\tCtrl+P",           57607
+        MENUITEM "&Vista Preliminar",           57609
+        MENUITEM "C&onfigurar Página",          57606
+        MENUITEM SEPARATOR
+        MENUITEM "&Salir",                      ID_APP_EXIT
+    END
+    POPUP "&Edición"
+    BEGIN
+        MENUITEM "&Deshacer\tCtrl+Z",           ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cor&tar\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "&Copiar\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "&Pegar\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&Ver"
+    BEGIN
+        MENUITEM "&Barra de herramientas",      ID_VIEW_TOOLBAR
+        MENUITEM "&Barra de estado",            ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Navegador\tF2",              136
+        MENUITEM "&Propiedades\tF3",            ID_VER_PROPIEDADES
+    END
+    POPUP "&Herramientas"
+    BEGIN
+        MENUITEM "&Servidores",                 142
+        MENUITEM "&Personalizar",               ID_HERRAMIENTAS_PERSONALIZAR
+    END
+    POPUP "&Ventana"
+    BEGIN
+        MENUITEM "&Cascada",                    ID_WINDOW_CASCADE
+        MENUITEM "&Mosaico",                    ID_WINDOW_TILE_HORZ
+    END
+    POPUP "Ay&uda"
+    BEGIN
+        MENUITEM "A&yuda\tF1",                  ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&Indice\tCtrl+F1",            ID_HELP_INDEX
+        MENUITEM "&Buscar\tAlt+F1",             ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&Acerca de SVE...",           ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_F2,          136,                    VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP_FINDER,         VIRTKEY, ALT, NOINVERT
+    VK_F1,          ID_HELP_INDEX,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_B_AGREGAR,           VIRTKEY, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F3,          ID_VER_PROPIEDADES,     VIRTKEY, NOINVERT
+    "P",            57607,                  VIRTKEY, CONTROL, NOINVERT
+    VK_RIGHT,       ID_NEXT_PANEEX,         VIRTKEY, ALT, NOINVERT
+    VK_LEFT,        ID_PREV_PANEEX,         VIRTKEY, ALT, NOINVERT
+    VK_PRIOR,       ID_PREV_PANEEX,         VIRTKEY, CONTROL, NOINVERT
+    VK_NEXT,        ID_NEXT_PANEEX,         VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,1,0,1
+ PRODUCTVERSION 2,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04e4"
+        BEGIN
+            VALUE "CompanyName", "SDG"
+            VALUE "FileDescription", "Sistema de verificación de envios"
+            VALUE "FileVersion", "2.1.0.1"
+            VALUE "InternalName", "SVE.exe"
+            VALUE "LegalCopyright", "SDG(c).  Reservados todos los derechos."
+            VALUE "OriginalFilename", "SVE.exe"
+            VALUE "ProductName", "SVE (Sistema de verificación de envios)"
+            VALUE "ProductVersion", "2.1.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\SVE.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "Error de inicialización OLE. Asegúrese de que la versión de las bibliotecas OLE es la correcta."
+    IDP_SOCKETS_INIT_FAILED "Error de inicialización de Windows Sockets."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "SVE"
+    IDR_SVETYPE             "\nSVE\nSVE\n\n\nSVE.Document\nSVE.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "SVE"
+    AFX_IDS_IDLEMESSAGE     "Listo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "MAY"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "DESP"
+    ID_INDICATOR_OVR        "SOB"
+    ID_INDICATOR_REC        "GRB"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Crear un documento nuevo\nNuevo"
+    ID_FILE_OPEN            "Abrir un documento existente\nAbrir"
+    ID_FILE_CLOSE           "Cerrar el documento activo\nCerrar"
+    ID_FILE_SAVE            "Guardar el documento activo\nGuardar"
+    ID_FILE_SAVE_AS         "Guardar el documento activo con un nombre nuevo\nGuardar como"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Mostrar información del programa, número de versión y copyright\nAcerca de"
+    ID_APP_EXIT             "Salir de la aplicación; permite guardar documentos\nSalir"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Abrir este documento"
+    ID_FILE_MRU_FILE2       "Abrir este documento"
+    ID_FILE_MRU_FILE3       "Abrir este documento"
+    ID_FILE_MRU_FILE4       "Abrir este documento"
+    ID_FILE_MRU_FILE5       "Abrir este documento"
+    ID_FILE_MRU_FILE6       "Abrir este documento"
+    ID_FILE_MRU_FILE7       "Abrir este documento"
+    ID_FILE_MRU_FILE8       "Abrir este documento"
+    ID_FILE_MRU_FILE9       "Abrir este documento"
+    ID_FILE_MRU_FILE10      "Abrir este documento"
+    ID_FILE_MRU_FILE11      "Abrir este documento"
+    ID_FILE_MRU_FILE12      "Abrir este documento"
+    ID_FILE_MRU_FILE13      "Abrir este documento"
+    ID_FILE_MRU_FILE14      "Abrir este documento"
+    ID_FILE_MRU_FILE15      "Abrir este documento"
+    ID_FILE_MRU_FILE16      "Abrir este documento"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Cambiar al siguiente panel de la ventana\nPanel siguiente"
+    ID_PREV_PANE            "Cambiar al panel anterior de la ventana\nPanel anterior"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Abrir otra ventana del documento activo\nNueva ventana"
+    ID_WINDOW_ARRANGE       "Organizar los iconos en la parte inferior de la ventana\nOrganizar iconos"
+    ID_WINDOW_CASCADE       "Organizar las ventanas para que se superpongan\nCascada"
+    ID_WINDOW_TILE_HORZ     "Organizar las ventanas en mosaico\nMosaico"
+    ID_WINDOW_TILE_VERT     "Organizar las ventanas en mosaico\nMosaico"
+    ID_WINDOW_SPLIT         "Dividir la ventana activa en paneles\nDividir"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Borrar la selección\nBorrar"
+    ID_EDIT_CLEAR_ALL       "Borrar todo\nBorrar todo"
+    ID_EDIT_COPY            "Copiar la selección y la coloca en el Portapapeles\nCopiar"
+    ID_EDIT_CUT             "Cortar la selección y la coloca en el Portapapeles\nCortar"
+    ID_EDIT_FIND            "Buscar el texto especificado\nBuscar"
+    ID_EDIT_PASTE           "Insertar el contenido del Portapapeles\nPegar"
+    ID_EDIT_REPEAT          "Repetir la última acción\nRepetir"
+    ID_EDIT_REPLACE         "Reemplazar el texto específico con texto diferente\nReemplazar"
+    ID_EDIT_SELECT_ALL      "Seleccionar todo el documento\nSeleccionar todo"
+    ID_EDIT_UNDO            "Deshacer la última acción\nDeshacer"
+    ID_EDIT_REDO            "Rehacer la acción previamente deshecha\nRehacer"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Mostrar u ocultar la barra de herramientas\nAlternar barra de herramientas"
+    ID_VIEW_STATUS_BAR      "Mostrar u ocultar la barra de estado\nAlternar barra de estado"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Cambiar el tamaño de la ventana"
+    AFX_IDS_SCMOVE          "Cambiar la posición de la ventana"
+    AFX_IDS_SCMINIMIZE      "Reducir la ventana a un icono"
+    AFX_IDS_SCMAXIMIZE      "Aumentar la ventana al tamaño máximo"
+    AFX_IDS_SCNEXTWINDOW    "Cambiar a la ventana siguiente del documento"
+    AFX_IDS_SCPREVWINDOW    "Cambiar a la ventana anterior del documento"
+    AFX_IDS_SCCLOSE         "Cerrar la ventana activa y preguntar si desea guardar los documentos"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restaurar la ventana a su tamaño normal"
+    AFX_IDS_SCTASKLIST      "Activar la Lista de tareas"
+    AFX_IDS_MDICHILD        "Activar esta ventana"
+END
+
+#endif    // Spanish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Colombia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESO)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_COLOMBIA
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ESCANERPP DIALOGEX 0, 0, 226, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Escáner"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Recortar documentos escaneados (Recomendado)",IDC_CRECORTAR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,20,182,10
+    CONTROL         "Mostrar cuadro de dialogo del controlador\r\ndel escáner antes de la digitalización",IDC_CDIALOGO,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,17,31,182,23
+    CONTROL         "Capturar documento a color",IDC_CCOLOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,58,103,10
+    CONTROL         "Maximizar calidad (No recomendado)",IDC_CCALIDAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,76,132,10
+    GROUPBOX        "Orientación",IDC_STATIC,9,90,203,40
+    CONTROL         "Vertical",IDC_RVERTICAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,100,39,10
+    CONTROL         "Horizontal",IDC_RHORIZONTAL,"Button",BS_AUTORADIOBUTTON,17,115,47,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ESCANERPP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BLOADING11          BITMAP                  "res\\loading\\loading0011.bmp"
+IDB_BLOADING1           BITMAP                  "res\\loading\\loading0001.bmp"
+IDB_BLOADING2           BITMAP                  "res\\loading\\loading0002.bmp"
+IDB_BLOADING3           BITMAP                  "res\\loading\\loading0003.bmp"
+IDB_BLOADING4           BITMAP                  "res\\loading\\loading0004.bmp"
+IDB_BLOADING5           BITMAP                  "res\\loading\\loading0005.bmp"
+IDB_BLOADING6           BITMAP                  "res\\loading\\loading0006.bmp"
+IDB_BLOADING7           BITMAP                  "res\\loading\\loading0007.bmp"
+IDB_BLOADING8           BITMAP                  "res\\loading\\loading0008.bmp"
+IDB_BLOADING9           BITMAP                  "res\\loading\\loading0009.bmp"
+IDB_BLOADING10          BITMAP                  "res\\loading\\loading0010.bmp"
+IDB_ACERCADE            BITMAP                  "res\\final.bmp"
+IDB_ASISTENTE           BITMAP                  "res\\asistente.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SVE.rc2""  // recursos editados que no son de Microsoft Visual C++\r\n"
+    "#include ""afxres.rc""         // Componentes estándar\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Spanish (Colombia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#include "res\SVE.rc2"  // recursos editados que no son de Microsoft Visual C++
+#include "afxres.rc"         // Componentes estándar
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
